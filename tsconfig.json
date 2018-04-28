@@ -1,0 +1,40 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es5",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@firebase/*": [
+        "libs/*"
+      ],
+      "@firebase/nativescript": [
+        "xplat/nativescript/index.ts"
+      ],
+      "@firebase/nativescript/*": [
+        "xplat/nativescript/*"
+      ],
+      "@firebase/web": [
+        "xplat/web/index.ts"
+      ],
+      "@firebase/web/*": [
+        "xplat/web/*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
+}
